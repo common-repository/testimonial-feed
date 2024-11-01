@@ -1,0 +1,111 @@
+.tfeed-fields textarea {
+    resize: none;
+    height: 130px;
+}
+.tfeed-fields input[type="text"],
+.tfeed-fields input[type="email"] {
+    width: 100%;
+}
+.tfeed-fields {
+    margin-bottom: 15px;
+}
+.tfeed-stars label span{
+  	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	padding: 0;
+  	margin: -1px;
+  	overflow: hidden;
+  	clip: rect(0,0,0,0);
+  	border: 0;
+}
+.tfeed-star:before{
+	content: '\2605';
+    font-size: 35px;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-style: initial;
+}
+.tfeed-stars label i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    line-height: 1;
+    cursor: pointer;
+}
+.tfeed-stars label.active i,
+.tfeed-stars label.active ~ label i{
+	color: orange;
+}
+.tfeed-stars {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.tfeed-stars label:hover i,
+.tfeed-stars label:hover ~ label i {
+	color: orange;
+}
+.tfeed-stars label input[type="radio"] {
+    margin-right: 0;
+    visibility: hidden;
+}
+.tfeed-stars label {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.text-right {
+	text-align: right;	
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.tfeed-item {
+    border: 2px solid #efefef;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #efefef;
+}
+.tfeed-item h3 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.tfeed-text .text-right {
+    font-style: italic;
+}
+.tfeed-star-output .tfeed-star:before {
+    font-size: 20px;
+    line-height: 1;
+}
+.tfeed-text {
+    margin-top: 10px;
+}
+.tfeed-star-output {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.tfeed-star-output.count-1 i:nth-child(n+5) {
+    color: orange;
+}
+.tfeed-star-output.count-2 i:nth-child(n+4) {
+    color: orange;
+}
+.tfeed-star-output.count-3 i:nth-child(n+3) {
+    color: orange;
+}
+.tfeed-star-output.count-4 i:nth-child(n+2) {
+    color: orange;
+}
+.tfeed-star-output.count-5 i:nth-child(n+1) {
+    color: orange;
+}
